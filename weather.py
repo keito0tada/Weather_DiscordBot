@@ -8,8 +8,8 @@ import datetime
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
 
-from bases import base, commandparser
-from cogs.openweathermap import OWM
+from .UtilityClasses_DiscordBot import base, commandparser
+from .lib.openweathermap import OWM
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 ZONE_TOKYO = zoneinfo.ZoneInfo('Asia/Tokyo')
@@ -256,7 +256,3 @@ class Weather(base.Command):
 
 async def setup(bot: discord.ext.commands.Bot):
     await bot.add_cog(Weather(bot=bot))
-
-
-if __name__ == '__main__':
-	pass
