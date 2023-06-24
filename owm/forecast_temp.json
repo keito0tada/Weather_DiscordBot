@@ -1,0 +1,62 @@
+{
+  "cod": null,
+  "message": null,
+  "cnt": null,
+  "list": [
+    {
+      "dt": null,
+      "main": {
+        "temp": null,
+        "feels_like": null,
+        "temp_min": null,
+        "temp_max": null,
+        "pressure": null,
+        "sea_level": null,
+        "grnd_level": null,
+        "humidity": null,
+        "temp_kf": null
+      },
+      "weather": [
+        {
+          "id": null,
+          "main": null,
+          "description": null,
+          "icon": null
+        }
+      ],
+      "clouds": {
+        "all": null
+      },
+      "wind": {
+        "speed": null,
+        "deg": null,
+        "gust": null
+      },
+      "visibility": null,
+      "pop": null,
+      "rain": {
+        "3h": null
+      },
+      "snow": {
+        "3h": null
+      },
+      "sys": {
+        "pod": null
+      },
+      "dt_txt": null
+    }
+  ],
+  "city": {
+    "id": null,
+    "name": null,
+    "coord": {
+      "lat": null,
+      "lon": null
+    },
+    "country": null,
+    "population": null,
+    "timezone": null,
+    "sunrise": null,
+    "sunset": null
+  }
+}

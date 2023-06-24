@@ -8,8 +8,8 @@ import datetime
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
 
-from .UtilityClasses_DiscordBot import base, commandparser
-from .lib.openweathermap import OWM
+from UtilityClasses_DiscordBot import base, commandparser
+from lib.openweathermap import OWM
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 ZONE_TOKYO = zoneinfo.ZoneInfo('Asia/Tokyo')
