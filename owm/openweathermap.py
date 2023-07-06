@@ -7,9 +7,9 @@ from typing import Optional, Union, Final, NamedTuple
 
 OWM_API_KEY: Final[str] = os.getenv('OWM_API_KEY')
 ZONE_TOKYO: Final[zoneinfo.ZoneInfo] = zoneinfo.ZoneInfo('Asia/Tokyo')
-with open('lib/current_weather_temp.json', 'r') as f:
+with open('owm/current_weather_temp.json', 'r') as f:
     CURRENT_WEATHER_DATA_TEMPLATE: Final[dict] = json.load(f)
-with open('lib/forecast_temp.json', 'r') as f:
+with open('owm/forecast_temp.json', 'r') as f:
     FORECAST_DATA_TEMPLATE: Final[dict] = json.load(f)
 
 
