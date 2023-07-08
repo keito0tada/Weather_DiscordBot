@@ -1,15 +1,15 @@
+import datetime
+import enum
+import os
+import zoneinfo
+
 import discord
-from discord.ext import commands, tasks
 import psycopg2
 import psycopg2.extras
+from discord.ext import commands, tasks
 
-import enum, os, zoneinfo
-import datetime
-from dataclasses import dataclass
-from typing import Dict, List, Optional, Union
-
-from UtilityClasses_DiscordBot import base, commandparser
-from lib.openweathermap import OWM
+from UtilityClasses_DiscordBot import base
+from owm.openweathermap import OWM
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 ZONE_TOKYO = zoneinfo.ZoneInfo('Asia/Tokyo')
