@@ -8,7 +8,7 @@ import psycopg2
 import psycopg2.extras
 from discord.ext import commands, tasks
 
-from .UtilityClass_DiscordBot import base
+from .UtilityClasses_DiscordBot import base
 from .owm.openweathermap import OWM
 
 DATABASE_URL = os.getenv('DATABASE_URL')
