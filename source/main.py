@@ -8,8 +8,8 @@ import psycopg2
 import psycopg2.extras
 from discord.ext import commands, tasks
 
-from UtilityClasses_DiscordBot import base
-from owm.openweathermap import OWM
+from .UtilityClass_DiscordBot import base
+from .owm.openweathermap import OWM
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 ZONE_TOKYO = zoneinfo.ZoneInfo('Asia/Tokyo')
